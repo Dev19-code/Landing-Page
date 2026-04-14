@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>الباحث المستنير | ارسم مسارك المهني</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#35343a",
+                        "surface-container-high": "#2a292f",
+                        "surface-tint": "#00dddd",
+                        "primary-fixed": "#00fbfb",
+                        "on-secondary-fixed": "#2b0053",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#470083",
+                        "secondary-fixed": "#efdbff",
+                        "outline-variant": "#3a4a49",
+                        "surface-container-highest": "#35343a",
+                        "on-primary-container": "#007070",
+                        "secondary-fixed-dim": "#dab9ff",
+                        "on-primary": "#003737",
+                        "background": "#131318",
+                        "outline": "#839493",
+                        "on-primary-fixed": "#002020",
+                        "on-secondary-container": "#f0ddff",
+                        "tertiary-fixed": "#79f5fb",
+                        "surface-container-lowest": "#0e0e13",
+                        "inverse-primary": "#006a6a",
+                        "on-primary-fixed-variant": "#004f4f",
+                        "primary": "#ffffff",
+                        "on-tertiary": "#003739",
+                        "surface-container-low": "#1b1b20",
+                        "primary-fixed-dim": "#00dddd",
+                        "on-surface": "#e4e1e9",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#303036",
+                        "on-surface-variant": "#b9cac9",
+                        "surface-container": "#1f1f25",
+                        "secondary-container": "#8f03ff",
+                        "surface-dim": "#131318",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#6500b8",
+                        "secondary": "#dab9ff",
+                        "on-background": "#e4e1e9",
+                        "on-tertiary-fixed": "#002021",
+                        "tertiary-container": "#79f5fb",
+                        "on-tertiary-container": "#007074",
+                        "tertiary": "#ffffff",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#004f52",
+                        "surface-bright": "#39383e",
+                        "primary-container": "#00fbfb",
+                        "surface": "#131318",
+                        "inverse-surface": "#e4e1e9",
+                        "tertiary-fixed-dim": "#59d8de"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["IBM Plex Sans Arabic", "Space Grotesk"],
+                        "body": ["IBM Plex Sans Arabic"],
+                        "label": ["IBM Plex Sans Arabic"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'IBM Plex Sans Arabic', sans-serif; background-color: #131318; color: #e4e1e9; }
+        .glass-card { background: rgba(53, 52, 58, 0.4); backdrop-filter: blur(16px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .rtl-flip { transform: scaleX(-1); }
+    </style>
+</head>
+<body class="selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl bg-opacity-40 shadow-[0_20px_50px_rgba(0,255,255,0.05)]">
+    <div class="flex flex-row-reverse justify-between items-center max-w-7xl mx-auto px-8 py-6">
+        <div class="text-2xl font-bold tracking-tighter text-white dark:text-cyan-400 font-headline">الباحث المستنير</div>
+        <div class="hidden md:flex flex-row-reverse items-center space-x-8 space-x-reverse font-headline text-sm tracking-widest uppercase">
+            <a class="text-cyan-400 border-b-2 border-cyan-400 pb-1" href="#">استكشاف</a>
+            <a class="text-gray-400 hover:text-white transition-colors" href="#">رؤى السوق</a>
+            <a class="text-gray-400 hover:text-white transition-colors" href="#">منح دراسية</a>
+        </div>
+        <div class="flex items-center space-x-6 space-x-reverse">
+            <button id="nav_join_btn" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-bold text-sm hover:bg-cyan-400/10 hover:text-cyan-300 transition-all scale-95 active:scale-90 duration-200">
+                انضم إلى "اللوم"
+            </button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24">
+    <section class="relative min-h-[921px] flex items-center px-8 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[120px]"></div>
+            <img class="w-full h-full object-cover opacity-20 grayscale brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2VBhF8xH0DJVD6-Rc3eT6RAZkzYHvAvEQK6KzSREDgZw0HJza7RjS1aXY2jWHRlWJ7pHaWqdE4mdzbsBv9BJSm9Mk49Qm3HiSqw6ca3rD3gP3UxIfSgzjjW8bwEdheJF7EjBzJi_4KOuM8hTDp4XlHID_B50C7CrnB8vXcc35IVpSD7tEyl4Hbp1rb-_hSamI-j3k8ABMD66lHQH6N_AQRjR1LIeianWShv6gGzCj0yA3KAs_7WlOYyOtQU35oPF2lFiulkJHty0"/>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8 text-right">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-headline font-bold leading-tight text-white tracking-tighter">
+                    ارسم مسارك المهني في <span class="text-primary-fixed-dim">سوق مستقبل السودان</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-on-surface-variant font-body max-w-2xl leading-relaxed">
+                    "اللوم الرقمي" للتميز السوداني. انسج مسارك من خلال رؤى السوق والوظائف المدعومة بالذكاء الاصطناعي.
+                </p>
+                <div class="flex flex-col sm:flex-row-reverse items-center justify-end gap-6 pt-4">
+                    <button id="hero_primary_cta" class="w-full sm:w-auto px-8 py-4 bg-primary-container text-on-primary-container rounded-xl font-bold text-lg hover:shadow-[0_0_24px_rgba(0,251,251,0.3)] transition-all active:scale-95">
+                        احصل على وصول مبكر
+                    </button>
+                    <button id="hero_secondary_cta" class="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 text-white rounded-xl font-bold text-lg hover:bg-surface-variant/40 transition-all active:scale-95">
+                        استكشاف المنهج
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-8 text-right">
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-16">اختر مسارك <span class="text-secondary">المميز</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div id="card_major_engineering" class="major-card glass-card p-8 rounded-2xl border border-outline-variant/10 hover:border-cyan-400/50 hover:bg-surface-container-high transition-all group cursor-pointer">
+                    <h3 class="text-2xl font-headline font-bold text-white mb-2">الهندسة</h3>
+                    <p class="text-on-surface-variant text-sm">بناء مدن مستدامة على طول النيل العظيم.</p>
+                </div>
+                <div id="card_major_business" class="major-card glass-card p-8 rounded-2xl border border-outline-variant/10 hover:border-cyan-400/50 hover:bg-surface-container-high transition-all group cursor-pointer">
+                    <h3 class="text-2xl font-headline font-bold text-white mb-2">الأعمال</h3>
+                    <p class="text-on-surface-variant text-sm">التنقل في التمويل وريادة الأعمال.</p>
+                </div>
+                <div id="card_major_medicine" class="major-card glass-card p-8 rounded-2xl border border-outline-variant/10 hover:border-cyan-400/50 hover:bg-surface-container-high transition-all group cursor-pointer">
+                    <h3 class="text-2xl font-headline font-bold text-white mb-2">الطب</h3>
+                    <p class="text-on-surface-variant text-sm">حلول رعاية صحية ثورية.</p>
+                </div>
+                <div id="card_major_it" class="major-card glass-card p-8 rounded-2xl border border-outline-variant/10 hover:border-cyan-400/50 hover:bg-surface-container-high transition-all group cursor-pointer">
+                    <h3 class="text-2xl font-headline font-bold text-white mb-2">تكنولوجيا المعلومات</h3>
+                    <p class="text-on-surface-variant text-sm">إتقان البنية التحتية الرقمية للسودان.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-surface-container-low/30 text-right">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-8">رؤى حية لقرار <span class="text-cyan-400">حاسم</span></h2>
+            <button id="market_insights_btn" class="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-xl font-bold text-lg hover:bg-cyan-400 hover:text-on-primary transition-all">
+                عرض الرؤى الكاملة
+            </button>
+        </div>
+    </section>
+
+    <section class="py-32 px-8 text-center">
+        <div class="max-w-4xl mx-auto space-y-10">
+            <h2 class="text-4xl md:text-6xl font-headline font-bold text-white">المستقبل لن ينتظر.</h2>
+            <form class="flex flex-col sm:flex-row-reverse gap-4 justify-center">
+                <input id="footer_email_input" class="px-6 py-4 bg-surface-container-lowest border-b-2 border-outline-variant text-white text-right" placeholder="بريدك الأكاديمي" type="email"/>
+                <button id="footer_signup_btn" type="button" class="px-10 py-4 bg-primary-container text-on-primary-container font-bold rounded-xl">وصول سريع</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<script>
+    // تتبع الضغط على العناصر
+    function trackClick(id, eventName, params = {}) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener('click', () => {
+                gtag('event', eventName, params);
+                console.log(`Event Sent: ${eventName}`, params);
+            });
+        }
+    }
+
+    // تتبع بطاقات التخصصات (Major Cards)
+    document.querySelectorAll('.major-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const majorName = this.querySelector('h3').innerText;
+            gtag('event', 'select_major', { 'major_name': majorName });
+            console.log(`Major Selected: ${majorName}`);
+        });
+    });
+
+    // إعداد التتبع للعناصر المحددة بالـ ID
+    trackClick('nav_join_btn', 'nav_button_click');
+    trackClick('hero_primary_cta', 'hero_early_access_click');
+    trackClick('hero_secondary_cta', 'hero_explore_curriculum_click');
+    trackClick('market_insights_btn', 'view_market_insights_click');
+    trackClick('footer_signup_btn', 'footer_form_submit_attempt');
+</script>
+
+</body>
+</html>
